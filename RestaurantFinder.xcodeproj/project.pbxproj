@@ -7,23 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F5198EC71EE895370082F4A6 /* ReviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5198EC61EE895370082F4A6 /* ReviewData.swift */; };
+		F544843A1EEB34F100E4D171 /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54484391EEB34F100E4D171 /* ReviewCell.swift */; };
+		F5B7CBB51E94D70C00321325 /* CollectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7CBB41E94D70C00321325 /* CollectionData.swift */; };
+		F5C28E5C1E942842006C8F9F /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C28E5B1E942842006C8F9F /* RestaurantTableViewController.swift */; };
+		F5C28E5E1E942849006C8F9F /* RestaurantURLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C28E5D1E942849006C8F9F /* RestaurantURLManager.swift */; };
+		F5C28E601E942861006C8F9F /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C28E5F1E942861006C8F9F /* SwiftyJSON.swift */; };
+		F5CDB08F1E94A1B2002D6D2F /* RestaurantData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CDB08E1E94A1B2002D6D2F /* RestaurantData.swift */; };
+		F5CDB0911E94A2EB002D6D2F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CDB0901E94A2EB002D6D2F /* Extensions.swift */; };
+		F5CDB0931E94A605002D6D2F /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CDB0921E94A605002D6D2F /* RestaurantTableViewCell.swift */; };
+		F5CDB0991E94CF27002D6D2F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CDB0981E94CF27002D6D2F /* DetailViewController.swift */; };
+		F5D76A181E94220000C317AF /* ShowSplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D76A171E94220000C317AF /* ShowSplashScreen.swift */; };
+		F5D93FC11E957D0400E8F5D3 /* DetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D93FC01E957D0400E8F5D3 /* DetailCollectionViewCell.swift */; };
 		F5F61B961E941C6A00265895 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F61B951E941C6A00265895 /* AppDelegate.swift */; };
-		F5F61B981E941C6A00265895 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F61B971E941C6A00265895 /* ViewController.swift */; };
 		F5F61B9B1E941C6A00265895 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F61B991E941C6A00265895 /* Main.storyboard */; };
 		F5F61B9E1E941C6A00265895 /* RestaurantFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5F61B9C1E941C6A00265895 /* RestaurantFinder.xcdatamodeld */; };
 		F5F61BA01E941C6B00265895 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5F61B9F1E941C6B00265895 /* Assets.xcassets */; };
 		F5F61BA31E941C6B00265895 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F61BA11E941C6B00265895 /* LaunchScreen.storyboard */; };
+		F5F61BAB1E941C8400265895 /* MyLaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = F5F61BAA1E941C8400265895 /* MyLaunchImage.png */; };
+		F5F61BAD1E941C8800265895 /* MyLaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5F61BAC1E941C8800265895 /* MyLaunchImage@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F5198EC61EE895370082F4A6 /* ReviewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReviewData.swift; path = ../ReviewData.swift; sourceTree = "<group>"; };
+		F54484391EEB34F100E4D171 /* ReviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
+		F5B7CBB41E94D70C00321325 /* CollectionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionData.swift; path = ../CollectionData.swift; sourceTree = "<group>"; };
+		F5C28E5B1E942842006C8F9F /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
+		F5C28E5D1E942849006C8F9F /* RestaurantURLManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantURLManager.swift; sourceTree = "<group>"; };
+		F5C28E5F1E942861006C8F9F /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		F5CDB08E1E94A1B2002D6D2F /* RestaurantData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantData.swift; sourceTree = "<group>"; };
+		F5CDB0901E94A2EB002D6D2F /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F5CDB0921E94A605002D6D2F /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		F5CDB0981E94CF27002D6D2F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F5D76A171E94220000C317AF /* ShowSplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowSplashScreen.swift; sourceTree = "<group>"; };
+		F5D93FC01E957D0400E8F5D3 /* DetailCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		F5F61B921E941C6A00265895 /* RestaurantFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5F61B951E941C6A00265895 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F5F61B971E941C6A00265895 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F5F61B9A1E941C6A00265895 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5F61B9D1E941C6A00265895 /* RestaurantFinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RestaurantFinder.xcdatamodel; sourceTree = "<group>"; };
 		F5F61B9F1E941C6B00265895 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5F61BA21E941C6B00265895 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5F61BA41E941C6B00265895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5F61BAA1E941C8400265895 /* MyLaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyLaunchImage.png; sourceTree = "<group>"; };
+		F5F61BAC1E941C8800265895 /* MyLaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MyLaunchImage@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +63,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F5B7CBB11E94D69300321325 /* DetailCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				F5198EC61EE895370082F4A6 /* ReviewData.swift */,
+				F5B7CBB41E94D70C00321325 /* CollectionData.swift */,
+				F5CDB0981E94CF27002D6D2F /* DetailViewController.swift */,
+				F5D93FC01E957D0400E8F5D3 /* DetailCollectionViewCell.swift */,
+				F54484391EEB34F100E4D171 /* ReviewCell.swift */,
+			);
+			name = DetailCollectionView;
+			sourceTree = "<group>";
+		};
+		F5CDB0941E94A668002D6D2F /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				F5C28E5D1E942849006C8F9F /* RestaurantURLManager.swift */,
+				F5C28E5F1E942861006C8F9F /* SwiftyJSON.swift */,
+				F5CDB0901E94A2EB002D6D2F /* Extensions.swift */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		F5CDB0951E94A682002D6D2F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F5F61BAC1E941C8800265895 /* MyLaunchImage@2x.png */,
+				F5F61BAA1E941C8400265895 /* MyLaunchImage.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		F5CDB0961E94A69B002D6D2F /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F5F61BA11E941C6B00265895 /* LaunchScreen.storyboard */,
+				F5D76A171E94220000C317AF /* ShowSplashScreen.swift */,
+			);
+			name = SplashScreen;
+			sourceTree = "<group>";
+		};
+		F5CDB0971E94A6D2002D6D2F /* RestaurantsTable */ = {
+			isa = PBXGroup;
+			children = (
+				F5CDB0921E94A605002D6D2F /* RestaurantTableViewCell.swift */,
+				F5C28E5B1E942842006C8F9F /* RestaurantTableViewController.swift */,
+				F5CDB08E1E94A1B2002D6D2F /* RestaurantData.swift */,
+			);
+			name = RestaurantsTable;
+			sourceTree = "<group>";
+		};
 		F5F61B891E941C6A00265895 = {
 			isa = PBXGroup;
 			children = (
@@ -56,11 +132,14 @@
 		F5F61B941E941C6A00265895 /* RestaurantFinder */ = {
 			isa = PBXGroup;
 			children = (
+				F5B7CBB11E94D69300321325 /* DetailCollectionView */,
+				F5CDB0971E94A6D2002D6D2F /* RestaurantsTable */,
+				F5CDB0961E94A69B002D6D2F /* SplashScreen */,
+				F5CDB0951E94A682002D6D2F /* Images */,
+				F5CDB0941E94A668002D6D2F /* Library */,
 				F5F61B951E941C6A00265895 /* AppDelegate.swift */,
-				F5F61B971E941C6A00265895 /* ViewController.swift */,
 				F5F61B991E941C6A00265895 /* Main.storyboard */,
 				F5F61B9F1E941C6B00265895 /* Assets.xcassets */,
-				F5F61BA11E941C6B00265895 /* LaunchScreen.storyboard */,
 				F5F61BA41E941C6B00265895 /* Info.plist */,
 				F5F61B9C1E941C6A00265895 /* RestaurantFinder.xcdatamodeld */,
 			);
@@ -126,6 +205,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5F61BAD1E941C8800265895 /* MyLaunchImage@2x.png in Resources */,
+				F5F61BAB1E941C8400265895 /* MyLaunchImage.png in Resources */,
 				F5F61BA31E941C6B00265895 /* LaunchScreen.storyboard in Resources */,
 				F5F61BA01E941C6B00265895 /* Assets.xcassets in Resources */,
 				F5F61B9B1E941C6A00265895 /* Main.storyboard in Resources */,
@@ -139,9 +220,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5CDB0931E94A605002D6D2F /* RestaurantTableViewCell.swift in Sources */,
 				F5F61B9E1E941C6A00265895 /* RestaurantFinder.xcdatamodeld in Sources */,
-				F5F61B981E941C6A00265895 /* ViewController.swift in Sources */,
+				F5198EC71EE895370082F4A6 /* ReviewData.swift in Sources */,
+				F5CDB0911E94A2EB002D6D2F /* Extensions.swift in Sources */,
+				F5D76A181E94220000C317AF /* ShowSplashScreen.swift in Sources */,
+				F5CDB08F1E94A1B2002D6D2F /* RestaurantData.swift in Sources */,
+				F5C28E5C1E942842006C8F9F /* RestaurantTableViewController.swift in Sources */,
+				F5C28E5E1E942849006C8F9F /* RestaurantURLManager.swift in Sources */,
+				F5CDB0991E94CF27002D6D2F /* DetailViewController.swift in Sources */,
+				F5C28E601E942861006C8F9F /* SwiftyJSON.swift in Sources */,
+				F5B7CBB51E94D70C00321325 /* CollectionData.swift in Sources */,
 				F5F61B961E941C6A00265895 /* AppDelegate.swift in Sources */,
+				F5D93FC11E957D0400E8F5D3 /* DetailCollectionViewCell.swift in Sources */,
+				F544843A1EEB34F100E4D171 /* ReviewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +354,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = RestaurantFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cs2680.RestaurantFinder;
@@ -274,6 +367,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = RestaurantFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cs2680.RestaurantFinder;
@@ -301,6 +395,7 @@
 				F5F61BA91E941C6B00265895 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
