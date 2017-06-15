@@ -50,12 +50,17 @@ class DetailCollectionViewCell : UICollectionViewCell
         // self.headlineLabel.text = resData.restaurantId
          self.detailsLabel.text = resData.phoneNumber
         
-        
-       if let resImageURL = URL(string: resData.image)
+       // for Data in resData.resImageArray{
             
-        {
-            self.resImageView.loadImage(url: resImageURL)
-        }
+             let resImageURL = URL(string:resData.resImageArray[0])
+                
+           // {
+                self.resImageView.loadImage(url: resImageURL)
+           // }
+            
+       // }
+        
+       
         
         
     }

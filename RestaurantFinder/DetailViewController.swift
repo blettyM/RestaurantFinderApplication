@@ -16,6 +16,8 @@ class DetailViewController : UICollectionViewController,UICollectionViewDelegate
     var tokenId : String = ""
     var businessesArray : Array<CollectionData>?
     var reviewArray : Array<ReviewData>?
+    var flag = false
+
     
     override func viewDidLoad() {
         
@@ -29,6 +31,7 @@ class DetailViewController : UICollectionViewController,UICollectionViewDelegate
         layout.itemSize = CGSize(width: width, height: width)
         layout.minimumInteritemSpacing = 0
         layout.minimumLineSpacing = 0
+        layout.collectionView?.backgroundColor = UIColor.blue
         collectionView!.collectionViewLayout = layout
         
         layout.sectionHeadersPinToVisibleBounds = true
@@ -44,11 +47,47 @@ class DetailViewController : UICollectionViewController,UICollectionViewDelegate
             
         case UICollectionElementKindSectionHeader:
             
-            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "Header", for: indexPath) 
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "Header", for: indexPath) as! HeaderReusableView
             
-            headerView.backgroundColor = UIColor.lightText;
+            headerView.backgroundColor = UIColor.yellow;
             
-            headerView.= "YOUR_HEADER_TEXT"
+            
+            headerView.layer.cornerRadius = 1.0;
+            
+            headerView.layer.borderWidth = 2.0;
+            headerView.layer.borderColor = UIColor.brown.cgColor;
+            
+            let myColor : UIColor = UIColor( red: 0.5, green: 0.5, blue:0, alpha: 1.0 )
+            
+            headerView.layer.shadowColor = myColor.cgColor
+            headerView.layer.shadowOpacity = 1.0;
+            headerView.layer.shadowRadius = 1.0;
+            headerView.layer.shadowOffset = CGSize(width: 0, height: 3)
+            
+            
+            if flag == false
+            
+            {
+                 headerView.isHidden = true
+            }
+            
+            else
+                
+            {
+              headerView.isHidden = false
+            }
+            
+            if indexPath.section == 0
+                
+            {
+            
+            headerView.headerLabel.text = "Photos"
+           
+            return headerView
+                
+            }
+            
+            headerView.headerLabel.text = "Reviews"
             
             return headerView
             
@@ -127,7 +166,7 @@ class DetailViewController : UICollectionViewController,UICollectionViewDelegate
                     
                     DispatchQueue.main.async
                         {
-                           
+                            self.flag = true
                             self.collectionView?.reloadData()
             
                         }
@@ -172,9 +211,9 @@ class DetailViewController : UICollectionViewController,UICollectionViewDelegate
                     
                     self.parseJSON1 (json: details)
                     
-                    DispatchQueue.main.async
+                    DispatchQueue.main.sync
                         {
-                            
+                            //self.flag = true
                             //self.collectionView?.reloadData()
                             
                     }
@@ -252,6 +291,8 @@ class DetailViewController : UICollectionViewController,UICollectionViewDelegate
        // self.collectionView?.scrollToItem(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
         
        // let cellidentifier = (indexPath.section == 0) ? "firstCell" : "reviewCell"
+        
+        
         
        var cell = UICollectionViewCell()
         

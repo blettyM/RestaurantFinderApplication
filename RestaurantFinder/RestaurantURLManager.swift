@@ -10,16 +10,19 @@ import Foundation
 
 class RestaurantURLManager
 {
-    class func getCityRestuarantURL(city: String) -> URL?
+    class func getCityRestuarantURL(lat: Double ,long: Double) -> URL?
     {
         
-        let cityName = city 
+        let latitude = lat
+        let longitude = long
         
-        let urlString = "https://api.yelp.com/v3/businesses/search?term=restaurants&location=\(cityName)"
+       // let urlString = "https://api.yelp.com/v3/businesses/search?term=restaurants&location=\(cityName)"
         
-         print(urlString)
+         let newUrlString = "https://api.yelp.com/v3/businesses/search?term=restaurants&latitude=\(latitude)&longitude=\(longitude)"
         
-        return URL(string: urlString)
+         print(newUrlString)
+        
+        return URL(string: newUrlString)
 }
     
     class func getAccessTokenURL() -> URL?

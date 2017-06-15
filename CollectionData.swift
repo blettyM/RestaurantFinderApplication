@@ -17,7 +17,8 @@ class CollectionData
         let phoneNumber: String
     
         
-        let image: String
+        var resImageArray = Array<String>()
+  
         
         
         init(dataJSON: JSON)
@@ -30,7 +31,17 @@ class CollectionData
             
           
         
-            self.image = dataJSON["image_url"].stringValue
+            let imageArray = dataJSON["photos"].arrayValue // from json file
+            
+            for element in imageArray
+                
+            {
+                
+                resImageArray.append(element.stringValue)
+                print(element.stringValue)
+                
+                
+            }
             
             
         }

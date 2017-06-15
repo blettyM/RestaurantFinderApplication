@@ -8,27 +8,105 @@
 
 import Foundation
 import UIKit
+import CoreLocation
 
-class RestaurantTableViewController : UITableViewController
+class RestaurantTableViewController : UITableViewController,CLLocationManagerDelegate
     
 {
     
     var tokenID : String = ""
     var restaurantArray: Array<RestaurantData>?
     
+   // var resSearchResults:Array<RestaurantData>?
+    
+    var locationManager:CLLocationManager!
+    
+    var latitude : Double = 0.0
+    var longitude : Double = 0.0
+    
+  
+    
+   
+    var dataArray =  Array<String>()
+    
+    var filteredArray = [String]()
+    
+    var shouldShowSearchResults = false
+   
+    
     override func viewDidLoad() {
         
         print("helloooo----")
         
+        
+        
         self.tableView.refreshControl = UIRefreshControl()
         self.tableView?.refreshControl?.addTarget(self, action: #selector(RestaurantTableViewController.reloadData), for: .valueChanged)
-        
+       // configureSearchController()
       
     }
     
+//    func configureSearchController() {
+//        
+//        searchController = UISearchController(searchResultsController: nil)
+//      
+//        searchController.dimsBackgroundDuringPresentation = true
+//        searchController.searchBar.placeholder = "Search here..."
+//        searchController.searchBar.delegate = self
+//    }
+ 
     override func viewWillAppear(_ animated: Bool)
     {
-        self.reloadData()
+        determineMyCurrentLocation()
+        
+    }
+    
+    
+    
+    func determineMyCurrentLocation() {
+        
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestAlwaysAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.startUpdatingLocation()
+            //locationManager.startUpdatingHeading()
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let userLocation:CLLocation = locations[0] as CLLocation
+        
+        // Call stopUpdatingLocation() to stop listening for location updates,
+        // other wise this function will be called every time when user location changes.
+        
+        // manager.stopUpdatingLocation()
+        
+        print("user latitude = \(userLocation.coordinate.latitude)")
+        print("user longitude = \(userLocation.coordinate.longitude)")
+        
+     
+            
+            if self.latitude != userLocation.coordinate.latitude && self.longitude != userLocation.coordinate.longitude {
+                
+                self.latitude = userLocation.coordinate.latitude
+                self.longitude = userLocation.coordinate.longitude
+                self.reloadData()
+            
+            }
+            
+           
+        
+        
+        
+
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error)
+    {
+        print("Error \(error)")
     }
     
     func reloadData()
@@ -109,10 +187,9 @@ class RestaurantTableViewController : UITableViewController
     {
         
         let tokenValue = token
+    
         
-        let cityName = "Scarborough"
-        
-        if let cityRestaurantsURL = RestaurantURLManager.getCityRestuarantURL(city: cityName)
+        if let cityRestaurantsURL = RestaurantURLManager.getCityRestuarantURL(lat: latitude,long: longitude)
             
         {
             
